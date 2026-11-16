@@ -29,7 +29,7 @@ pipeline {
             steps {
                 bat '''
                     docker rm -f wave-frontend-container
-                    docker-compose up -d --build
+                    docker compose up -d 
                 '''
             }
         }
